@@ -6,7 +6,9 @@ const homeController = require('./controller/homeController')
 app.set('views', './views');
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
+
 app.use(express.static('./assets/images'))
+app.use(express.static('./assets/css'))
 
 app.use('/', homeController)
 

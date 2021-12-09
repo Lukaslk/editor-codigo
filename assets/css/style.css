@@ -1,0 +1,61 @@
+body {
+    background: #051D3B;
+}
+
+/* Header */
+
+.container-header {
+    width: 100%;
+    height: 4.375;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    box-sizing: border-box;
+    height: 4.375rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+::placeholder { color: lightslategray}
+
+.cabecalho__pesquisa_campo {
+    border-style: none;
+    border-radius: 0.625rem;
+    opacity: 0, 65;
+    width: 43.75rem;
+    height: 3.125rem;
+    margin: 1.25rem auto;
+    outline: none;
+    
+    font-family: 'Inter';
+    font-size: 1rem;
+    color: white;
+
+    background: #2D415B;
+}
+
+.usuario a {
+    width: 6.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-right: 1.25rem;
+}
+
+.foto-usuario {
+    width: 3.25rem;
+    padding-left: 10px;
+}
+
+.nome-usuario {
+    font-size: 20px;
+    color: lightslategray;
+    
+}
+
+/* Menu Esquerdo */
+
