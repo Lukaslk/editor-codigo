@@ -1,0 +1,68 @@
+
+/* Menu Esquerdo */
+
+.main li {
+    list-style-type: none;
+    margin-left: 1rem;
+    color: #FFFFFF;
+}
+
+.navegacao{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 22.625rem;
+    color: white;
+    box-sizing: border-box;
+    padding: 2.75rem 2rem;
+}
+
+.navegacao_menu {
+    margin-left: -2.5rem;
+
+    font-size: 1rem;
+    line-height: 1.5rem;
+    
+}
+
+.navegacao_titulo {
+    display: flex;
+
+    font-size: 12px;
+    line-height: 1.125rem;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+}
+
+.logo__menuEsquerdo {
+    box-sizing: border-box;
+    height: 2.489rem;
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+.navegacao_item{
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 376px) {
+    /* Mudar menu esquerdo*/
+
+    .navegacao {
+        display: none;
+    }
+
+    .active {
+        background: #051D3B;
+        width: 300px;
+        display: block;
+        position: absolute;
+        margin-left: 80px;
+        margin-top: 16px;
+        border-radius: 8px;
+    }
+}

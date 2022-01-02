@@ -1,0 +1,133 @@
+/* Header */
+
+.container__header {
+    height: 4.375rem;
+    display: flex;
+    align-items: center;
+    gap: 75px;
+}
+
+.logo {
+    box-sizing: border-box;
+    height: 4.375rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+::placeholder { color: lightslategray}
+
+.cabecalho__pesquisa_campo {
+    border-style: none;
+    border-radius: 0.625rem;
+    opacity: 0, 65;
+    min-width: 45rem;
+    width: 43.75rem;
+    height: 3.125rem;
+    
+    font-family: 'Inter';
+    font-size: 1rem;
+    color: white;
+
+    background: #2D415B;
+}
+
+.mobile__pesquisa, .mobile__menu {
+    display: none;
+}
+
+.mobile__inputPesquisa {
+    display: none;
+}
+
+.usuario a {
+    width: 6.625rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.foto-usuario {
+    width: 3.25rem;
+}
+
+.nome-usuario {
+    font-size: 20px;
+    color: lightslategray;
+    
+}
+
+/* Mobile */
+
+@media screen and (max-width: 376px) {
+
+    .logo {
+        margin-right: 14px;
+        margin-left: -5px;
+        height: 60px;
+        width: 180px;
+    }
+
+    .usuario {
+        display: none;
+    }
+
+    .container__header {
+        justify-content: space-between;
+        padding-top: 16px;
+        padding-left: 10px;
+        gap: 0px;
+      }
+
+    /* Menu */
+
+    .mobile__menu div {
+        width: 2rem;
+        height: 0.125rem;
+        background: #FFF;
+        margin: 0.25rem;
+    }
+
+    .mobile__menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Finish menu*/
+
+    /* Barra de busca */
+    .cabecalho__pesquisa_campo {
+        display: none;
+    }
+
+
+    .mobile__inputPesquisa {
+        display: none;
+        height: 60px;
+        width: 180px;
+        border-style: none;
+        border-radius: 0.625rem;
+        opacity: 0, 65;
+        height: 3.125rem;
+        margin-bottom: .5rem;
+        margin-left: 8px;
+        
+        font-family: 'Inter';
+        font-size: 1rem;
+        color: white;
+    
+        background: #2D415B;
+    }
+
+    .mobile__menu {
+        background: #051D3B;
+        margin-right: 12px;
+        border: none;
+    }
+
+    .mobile__pesquisa {
+        display: flex;
+    }
+
+    /* Finish Barra de busca */
+}

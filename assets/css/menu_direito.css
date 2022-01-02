@@ -1,0 +1,104 @@
+/* Menu Direito */
+
+.menu__direito {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20rem;
+    color: white;
+    box-sizing: border-box;
+    padding: 40px 150px 0px 0px;
+}
+
+.titulo__menuDireito {
+    font-size: 12px;
+    line-height: 1.125rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+}
+
+.menu__direito input {
+    border-style: none;
+    border-radius: 0.5rem;
+    width: 250px;
+    height: 3rem;
+    margin: .5rem auto;
+    color: white;
+    outline: none;
+    background: #2D415B;
+}
+
+#input__descricao {
+    height: 5rem;
+}
+
+.menu__direito select {
+    border-style: none;
+    border-radius: 0.5rem;
+    opacity: 0, 65;
+    width: 100%;
+    height: 3rem;
+    margin: .5rem auto;
+    outline: none;
+    background: #2D415B;
+
+    color: lightslategray;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.menuDireito__personalizacao {
+    margin-top: 1.563rem;
+}
+
+#menuDireito__pegarCor {
+    background: none;
+    border: solid 1px #FFFFFF;
+    width: 254px;
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0.25rem;
+  }
+  
+  input[type='color']::-webkit-color-swatch {
+    border: none;
+    border-radius: 4px;
+  }
+
+  .btn__salvaProjeto {
+    border-style: none;
+    border-radius: 0.5rem;
+    opacity: 0, 65;
+    width: 100%;
+    height: 3rem;
+    margin: .5rem auto;
+    outline: none;
+    background: #5081FB;
+
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #051D3B;
+}
+
+@media screen and (max-width: 376px) {
+
+    form {
+        width: 330px;
+    }
+
+    .menu__direito {
+        display: flex;
+        margin-left: 16px;
+    }
+
+    .menu__direito input {
+        width: 330px;
+    }
+
+    #menuDireito__pegarCor {
+        width: 330px;
+    }
+}

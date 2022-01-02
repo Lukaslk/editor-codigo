@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dracula.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="menu_esquerdo.css">
+    <link rel="stylesheet" href="menu_direito.css">
+    <link rel="stylesheet" href="comunidade.css">
+    <link rel="stylesheet" href="editor.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container__header">
+        <a href="#">
+            <img class="logo" src="logo.png">  
+            <input type="search" name="pesquisa" class="mobile__inputPesquisa"
+            placeholder="Busque por algo"> 
+        </a>
+        <input type="search" name="pesquisa" class="cabecalho__pesquisa_campo"
+            placeholder="Busque por algo">
+
+        <div class="mobile__pesquisa">
+            <img src="busca.svg" alt="" id="search__mobile">
+        </div>
+
+        <div class="usuario">
+            <a href="">
+                <img src="foto.png" alt="Foto usuario" class="foto-usuario">
+                <p class="nome-usuario">Harry</p>
+            </a>
+        </div>
+        <button class="mobile__menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </button>
+    </div>
+</header>
+
+    <main class="main">
+
+        <!-- Menu esquerdo -->
+
+        <nav class="navegacao">
+            <h2 class="navegacao_titulo">Menu</h2>
+            <ul class="navegacao_menu">
+                <a href="/" class="navegacao_item">
+                    <img class="logo__menuEsquerdo" src="editor.svg">
+                    <li class="navegacao_editor-de-codigo"><p>Editor de Codigo</p></li>
+                </a>
+                <a href="/comunidade" class="navegacao_item">
+                    <img class="logo__menuEsquerdo" src="comunidade.svg">   
+                    <li class="navegacao-comunidade"><p>Comunidade</p></li>
+                </a>
+                <div id="lixo" class="navegacao_item">
+                    <img class="logo__menuEsquerdo" src="lixo.png">  
+                    <li class="navegacao_editor-de-codigo"><p>Limpar Projetos</p></li>
+                </div>
+            </ul>
+           
+        </nav>
+
+        <!-- Editor -->
+        
+        <div id="div__projeto">
+            <div id="div"></div>
+        </div>
+
+    </main>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script src="index.js"></script>
+    <script src="carregarprojetos.js"></script>
+    <script src="mobileResponsive.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+.cor__fundo {
+    display: flex;
+    justify-content: center;
+    background-color: turquoise;
+    padding: 1em;
+    border-radius: 8px;
+    margin: -0.625rem;
+}
+
+.container__texto {
+    padding-top: 60px;
+}
+
+#editor {
+    width: 41rem;
+    min-height: 4rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: black;
+    color: #FFFFFF;
+}
+
+.code.hljs {
+    background: black;
+    outline: none;
+}
+
+.btn__editor {
+    width: 45.125rem;
+    height: 3.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 1.875rem;
+    background: #5081FB14;
+    margin-left: -0.625rem;
+    margin-right: -5.625rem;  
+
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#containerTexto__segundo {
+    width: 750px;
+    margin-right: -60px;
+}
+
+.btn__export {
+    width: 22.5rem;
+    height: 3.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 1.875rem;
+    background: #5081FB14; 
+    margin-left: -0.625rem;   
+
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.container__texto select {
+    border-style: none;
+    border-radius: 0.5rem;
+    opacity: 0, 65;
+    width: 22.5rem;
+
+    height: 3.5rem;
+    margin: .5rem auto;
+
+    outline: none;
+    background: #2D415B;
+
+    color: lightslategray;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 376px) {
+
+    .containerTexto__segundo, .btn__export, .select__editor {
+        display: none;
+    }
+
+    .cor__fundo {
+        margin: 16px;
+        width: 16.5rem;
+        padding: 2rem;
+    }
+
+    .container__texto {
+        padding-top: 2px;
+    }
+
+    #editor {
+        width: 18.25rem;
+        min-height: 10rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background: black;
+        color: #FFFFFF;
+    }
+
+    .btn__editor {
+        width: 330px;
+        height: 3.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        margin-top: 4px;
+        margin-left: 16px;
+        margin-bottom: 4px;
+    }
+}

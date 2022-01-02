@@ -1,0 +1,86 @@
+.main {
+    gap: 35px;
+}
+
+/* Página comunidade */
+
+#div__projeto {
+    margin-right: 700px;
+
+}
+
+#div__projeto #div {
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 250px;
+    margin-top: 35px;
+}
+
+.container__textoComunidade {
+    box-sizing: border-box;
+    min-width: 28.5rem;
+    width: 28.5rem;
+    padding: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.cor__fundoComunidade {
+    display: flex;
+    justify-content: center;
+    background-color: turquoise;
+    padding: 1em;
+    border-radius: 8px;
+    margin: -10px;
+}
+
+
+.descricaoProjeto__comunidade {
+    width: 412px;
+    height: 110px;
+    background: rgba(0, 0, 0, 0.16);
+    margin-left: -10px;
+    margin-top: -20px;
+    border-radius: 8px;
+    position: relative;
+    color: burlywood;
+}
+
+.descricaoProjeto__comunidade h3 {
+    font-weight: bold;
+    padding-top: 6px;
+}
+
+.descricaoProjeto__comunidade h3, h4 {
+    padding-left: 6px;
+}
+
+@media screen and (max-width: 376px) {
+    /* Editor */
+    #div__projeto #div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+
+    }
+    
+    .container__textoComunidade {
+        min-width: 359px;
+        width: 359px;
+        margin-top: -3.8px;
+        margin-left: 0.5px;
+        padding: 25px;
+    }
+
+    .cor__fundoComunidade {
+        margin-left: -10px;
+        width: 264px;
+        padding: 2rem;
+        margin-top: -38px;
+    }
+
+    .descricaoProjeto__comunidade {
+        width: 328px;
+    }
+}

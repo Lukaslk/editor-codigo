@@ -2,196 +2,37 @@ body {
     background: #051D3B;
 }
 
-/* Header */
-
-.container-header {
-    width: 100%;
-    height: 4.375;
-    display: flex;
-    align-items: center;
+a {
+    text-decoration: none
 }
-
-.logo {
-    box-sizing: border-box;
-    height: 4.375rem;
-    display: flex;
-    align-items: center;
-    margin-bottom: .5rem;
-}
-
-::placeholder { color: lightslategray}
-
-.cabecalho__pesquisa_campo {
-    border-style: none;
-    border-radius: 0.625rem;
-    opacity: 0, 65;
-    width: 43.75rem;
-    height: 3.125rem;
-    margin: 1.25rem auto;
-    outline: none;
-    
-    font-family: 'Inter';
-    font-size: 1rem;
-    color: white;
-
-    background: #2D415B;
-}
-
-.usuario a {
-    width: 6.625rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
-    margin-right: 1.25rem;
-}
-
-.foto-usuario {
-    width: 3.25rem;
-    padding-left: 10px;
-}
-
-.nome-usuario {
-    font-size: 20px;
-    color: lightslategray;
-    
-}
-
-/* Menu Esquerdo */
 
 .main{
     display: flex;
     box-sizing: border-box;
-    justify-content: space-between;
 
     font-family: 'Inter','icones','Roboto Mono',sans-serif;
     font-style: normal;
     font-weight: normal;
+    gap: 70px;
 }
 
-.main li {
-    list-style-type: none;
-    margin-left: 1rem;
-    color: #FFFFFF;
+button, input, select, .navegacao_item {
+    filter: brightness(85%);
 }
 
-.navegacao{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 362px;
-    color: white;
-    box-sizing: border-box;
-    padding: 44px 32px;
-}
-
-.navegacao_menu {
-    margin-left: -40px;
-
-    font-size: 16px;
-    line-height: 24px;
-    
-}
-
-.navegacao_titulo {
-    display: flex;
-
-    font-size: 12px;
-    line-height: 18px;
-    /* identical to box height, or 150% */
-
-    letter-spacing: 0.4em;
-    text-transform: uppercase;
-}
-
-.navegacao_item{
-    display: flex;
-    align-items: center;
-    padding: 0.75rem 0;
-}
-
-/* Menu Direito */
-
-.menu-direito {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 272px;
-    color: white;
-    box-sizing: border-box;
-    padding: 44px 32px;
-}
-
-.titulo-menu-direito {
-    font-size: 12px;
-    line-height: 18px;
-    /* identical to box height, or 150% */
-
-    letter-spacing: 0.4em;
-    text-transform: uppercase;
-}
-
-.menu-direito input {
-    border-style: none;
-    border-radius: 0.5rem;
-    opacity: 0, 65;
-    width: 100%;
-    height: 3rem;
-    margin: .5rem auto;
-    outline: none;
-    background: #2D415B;
-}
-
-#input-descricao-projeto {
-    height: 5rem;
-}
-
-.menu-direito select {
-    border-style: none;
-    border-radius: 0.5rem;
-    opacity: 0, 65;
-    width: 100%;
-    height: 3rem;
-    margin: .5rem auto;
-    outline: none;
-    background: #2D415B;
-
-    color: lightslategray;
-    font-size: 16px;
-    line-height: 24px;
-
-}
-
-.menu-direito-personalizacao {
-    margin-top: 25px;
-}
-
-#menu-direito-pegar-cor {
-    background: none;
-    border: solid 1px #FFFFFF;
-}
-
-input[type='color']::-webkit-color-swatch-wrapper {
-    padding: 0.25rem;
-  }
-  
-  input[type='color']::-webkit-color-swatch {
-    border: none;
-    border-radius: 4px;
+button:hover, input:hover, select:hover, .navegacao_item:hover {
+    animation: button 0s linear 1 normal forwards;
   }
 
-  .menu-direito-salvar-projeto {
-    border-style: none;
-    border-radius: 0.5rem;
-    opacity: 0, 65;
-    width: 100%;
-    height: 3rem;
-    margin: .5rem auto;
-    outline: none;
-    background: #5081FB;
+  @keyframes button{
+    from { filter: brightness(0) }
+    to { filter: brightness(100%); }
+}
 
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: #051D3B;
+@media screen and (max-width: 376px) {
+    .main {
+        gap: 0px;
+        display: flex;
+        flex-direction: column;
+    }
 }
