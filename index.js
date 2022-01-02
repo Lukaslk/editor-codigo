@@ -1,9 +1,12 @@
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
+require('dotenv').config()
 
 const homeController = require('./controller/homeController')
 const comunidadeController = require('./controller/comunidadeController')
+
+const port = process.env.PORT || 3000
 
 app.use(bodyParser.json())
 
@@ -18,4 +21,4 @@ app.use(express.static('./assets/js'))
 app.use('/', homeController)
 app.use('/', comunidadeController)
 
-app.listen(3000, () => console.log("Servidor rodando na porta 3000"))
+app.listen(port, () => console.log("Servidor rodando na porta 3000"))
