@@ -1,6 +1,6 @@
-# chat-app
+# Estilizador de código
 
-# Description
+# Descrição
 
 Um estilizador de código proposto pelo Desafio da #Alura challenge
 
